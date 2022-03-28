@@ -1,7 +1,5 @@
-import 'package:custom_paint_tutorial/clock.dart';
+import 'package:custom_paint_tutorial/sliders/range_slider.dart';
 import 'package:flutter/material.dart';
-
-import 'circular_progress.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const DetailScreen(),
+      home: const SideSlider(
+        
+      ),
     );
   }
 }

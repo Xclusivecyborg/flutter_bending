@@ -2,16 +2,16 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class DetailScreen extends StatefulWidget {
-  const DetailScreen({
+class CircularProgress extends StatefulWidget {
+  const CircularProgress({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<DetailScreen> createState() => _DetailScreenState();
+  State<CircularProgress> createState() => _CircularProgressState();
 }
 
-class _DetailScreenState extends State<DetailScreen> {
+class _CircularProgressState extends State<CircularProgress> {
   double end = 0;
 
   @override
