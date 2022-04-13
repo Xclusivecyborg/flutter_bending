@@ -18,7 +18,7 @@ class SideSlider extends StatelessWidget {
             thumbSize: 30,
           ),
         ),
-      ),
+      ), 
     );
   }
 }
