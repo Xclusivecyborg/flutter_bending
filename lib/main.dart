@@ -1,3 +1,4 @@
+import 'package:custom_paint_tutorial/others/test_screen.dart';
 import 'package:custom_paint_tutorial/others/tobey_screens.dart';
 import 'package:custom_paint_tutorial/sliders/range_slider.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const TobeyScreen2(
+      home: const TestScreen(
         
       ),
     );
