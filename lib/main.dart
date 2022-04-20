@@ -1,6 +1,4 @@
-import 'package:custom_paint_tutorial/others/test_screen.dart';
-import 'package:custom_paint_tutorial/others/tobey_screens.dart';
-import 'package:custom_paint_tutorial/sliders/range_slider.dart';
+import 'package:custom_paint_tutorial/others/dilo_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const TestScreen(
+      home: const DiloScreen(
         
       ),
     );
