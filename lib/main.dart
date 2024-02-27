@@ -1,4 +1,4 @@
-import 'package:custom_paint_tutorial/others/dilo_screen.dart';
+import 'package:custom_paint_tutorial/shaders/flutterbytes_text_shader.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,18 +6,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      themeMode: ThemeMode.dark,
-      theme: ThemeData.dark(),
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const DiloScreen(
-        
-      ),
+      home: FlutterBytesText(),
     );
   }
 }
