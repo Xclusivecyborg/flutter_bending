@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -14,13 +15,20 @@ class Clock extends StatefulWidget {
 
 class _ClockState extends State<Clock> {
   String date = DateFormat.jm().format(DateTime.now());
+  Timer? _timer;
   @override
   void initState() {
-    Timer.periodic(const Duration(seconds: 1), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       date = DateFormat.jms().format(DateTime.now());
       setState(() {});
     });
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
   }
 
   @override

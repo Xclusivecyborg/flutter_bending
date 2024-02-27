@@ -72,7 +72,6 @@ class DiloPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final height = size.height;
     final width = size.width;
-    final center = Offset(width / 2, height / 2);
 
     final paint1 = Paint()
       ..style = PaintingStyle.fill
