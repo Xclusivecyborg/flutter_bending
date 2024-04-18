@@ -1,4 +1,4 @@
-import 'package:custom_paint_tutorial/shaders/flutterbytes_text_shader.dart';
+import 'package:custom_paint_tutorial/flip_card_animation/flip_card_animation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: FlutterBytesText(),
+      home: FlipCardAnimation(),
     );
   }
 }
